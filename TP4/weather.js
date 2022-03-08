@@ -29,6 +29,7 @@ async function weather_data(input, button, city_name, temperature, wind_speed, w
         weather_picture.src = weather_data["current"]["weather_icons"][0];
         weather_picture.alt = weather_data["current"]["weather_descriptions"][0];
 
+        list.style.display = "block";
         input.value = "";
     }
 
